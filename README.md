@@ -1,2 +1,2 @@
-this is our website
-this is my first commit
+Directions for sapti:
+npm install
