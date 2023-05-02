@@ -5,5 +5,9 @@
 
 ```
 cd atitric
+```
+
+```
 npm install
+
 ```
