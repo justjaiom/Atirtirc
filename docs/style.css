@@ -1,15 +1,24 @@
+:root{
+  --main : #ccc;
+  --secondary: #262626;
+  --hover: #2581DC
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #ccc;
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--main);
 }
 
 .navigation {
   height: 70px;
-  background-color: #262626;
+  visibility: visible;
+  background-color: var(--secondary);
   position: fixed;
   top: 0;
   width: 100%;
+  transition: .5s;
 }
 
 .nav-container {
@@ -50,13 +59,13 @@ nav ul li a {
   display: block;
   color: #fff;
   padding: 0 20px;
-  background: #262626;
+  background: var(--secondary);
   text-decoration: none;
   line-height: 70px;
 }
 
 nav ul li a:hover {
-          background: #2581DC;
+          background: var(--hover);
           color: #ffffff;
           transition: .4s;
 }
@@ -146,7 +155,7 @@ nav ul li ul li a {
     border-radius: 1px;
     height: 4px;
     width: 30px;
-    background: pink;
+    background: var(--main);
     position: absolute;
     display: block;
     content: '';
@@ -163,3 +172,4 @@ nav ul li ul li a {
       transform: rotate(45deg); }
     #nav-toggle.active span:after {
       transform: rotate(-45deg); }
+
