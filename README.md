@@ -1,6 +1,6 @@
 # Atirtirc
 
-***Frr sapti first time after cloning***
+***For sapti first time after cloning***
 
 
 ```
@@ -12,7 +12,3 @@ npm install
 
 ```
 
-to run:
-```
-npm run dev
-```
