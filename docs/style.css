@@ -1,6 +1,6 @@
 :root{
-  --main : #ccc;
-  --secondary: #262626;
+  --main : #fff;
+  --secondary: #EAF1F1;
   --hover: #2581DC
 }
 
@@ -11,11 +11,17 @@ body {
   background-color: var(--main);
 }
 
+.title{
+  font-size: 72px;
+
+}
+
 .navigation {
   height: 70px;
   visibility: visible;
-  background-color: var(--secondary);
-  position: fixed;
+  color: var(--secondary);
+  background-color: var(--main);
+  position:sticky;
   top: 0;
   width: 100%;
   transition: .5s;
@@ -35,7 +41,7 @@ body {
  }
 
 .brand a {
-  color: white;
+  color: black;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -57,9 +63,9 @@ nav ul li {
 
 nav ul li a {
   display: block;
-  color: #fff;
+  color: black;
   padding: 0 20px;
-  background: var(--secondary);
+  background: var(--main);
   text-decoration: none;
   line-height: 70px;
 }
@@ -155,7 +161,7 @@ nav ul li ul li a {
     border-radius: 1px;
     height: 4px;
     width: 30px;
-    background: var(--main);
+    background: var(--secondary);
     position: absolute;
     display: block;
     content: '';
@@ -173,3 +179,27 @@ nav ul li ul li a {
     #nav-toggle.active span:after {
       transform: rotate(-45deg); }
 
+/* hero */
+
+.hero{
+  background-color: var(--secondary);
+}
+
+.wrapper {
+  background-color: var(--secondary);
+  padding: 5px;
+}
+
+#hero-container {
+  display: grid;
+  background-color: var(--secondary);
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px;
+  height: 100%;
+  margin: 50px;
+}
+
+.cell-1{
+  margin-bottom: 20px;
+}
