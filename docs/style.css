@@ -108,25 +108,30 @@ nav ul li:hover {
     color: var(--secondary-color);
     box-shadow: inset 0 5px var(--secondary-color);
 }
-
-nav ul li ul.sub-nav {
+.sub-nav {
     position: absolute;
     top: 20px;
     left: 0;
-    width: 100%;
+    width: auto; /* change width to auto */
     background: var(--primary-light-color);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.14), -1px 0px 1px rgba(0, 0, 0, 0.14);
     visibility: hidden;
+    left: 50%;
+    transform: translateX(-50%);
     opacity: 0;
+    border-radius: 10px;
 }
 
 nav ul li ul.sub-nav li {
     color: var(--primary-color);
     width: 100%;
-    padding: 15px 0px;
+    padding: 15px 50px; /* increase padding left and right */
     list-style: none;
     max-width: fit-content;
+    box-sizing: border-box; /* include padding in width calculation */
 }
+
+
 
 nav ul li ul.sub-nav li:hover {
     color: var(--secondary-color);
@@ -356,7 +361,8 @@ nav ul li:hover ul.sub-nav {
     nav ul li ul.sub-nav {
         position: relative;
         top: 20px;
-        left: 0;
+        left: 50%;
+        transform: translateX(-40%);
         width: 100%;
         background: transparent;
         content-visibility: hidden;
