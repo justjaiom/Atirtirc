@@ -295,17 +295,19 @@ nav ul li:hover ul.sub-nav {
 
     .nav-item {
         display: block;
-        margin: 20px 0;
+        margin: 80px 0;
         text-align: center;
     }
 
     .navbar-nav {
         margin-top: 80px;
+
     }
 
     .nav-link {
         color: #fff;
         transition: all 0.3s ease-in-out;
+
     }
 
     .nav-link:hover {
@@ -370,13 +372,15 @@ nav ul li:hover ul.sub-nav {
         opacity: 0;
         box-shadow: none;
     }
-
-    nav ul li ul.sub-nav li {
+    /* fix the sub nav elements */
+    .sub-nav li {
         color: var(--primary-color);
         width: 100%;
         list-style: none;
-        max-width: fit-content;
+        max-width: fit-content; 
+        margin: 50px;    
     }
+
 
     nav ul li:hover ul.sub-nav {
         content-visibility: visible;
