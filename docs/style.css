@@ -126,6 +126,7 @@ nav ul li:hover {
     transform: translateX(-50%);
     opacity: 0;
     border-radius: 10px;
+    z-index: 2;
 }
 
 nav ul li ul.sub-nav li {
@@ -387,7 +388,7 @@ nav ul li:hover ul.sub-nav {
         width: 100%;
         list-style: none;
         max-width: fit-content; 
-        margin: 50px;    
+        margin-bottom: 50px;
     }
 
 
