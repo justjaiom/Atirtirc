@@ -14,6 +14,10 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+body{
+    background: var(--alice-blue);
+}
+
 a {
     color: var(--primary-color);
     text-decoration: none;
