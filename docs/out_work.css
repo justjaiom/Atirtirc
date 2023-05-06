@@ -1,0 +1,69 @@
+:root {
+    --primary-color: #2d2c62;
+    --primary-light-color: #96ADC8;
+    --secondary-color: #fa676d;
+    --alice-blue: #e3f0ff;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    flex: 0 0 auto;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .card h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: var(--primary-color);
+  }
+  
+  .card p {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+  }
+  
+  .card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .card a:hover {
+    background-color: var(--primary-light-color);
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      overflow-x: scroll;
+    }
+  }
+  
