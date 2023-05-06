@@ -132,6 +132,9 @@ nav ul li ul.sub-nav li {
     max-width: fit-content;
     box-sizing: border-box; /* include padding in width calculation */
 }
+nav ul li ul.sub-nav li :hover{   
+    color: var(--alice-blue);
+}
 
 
 
