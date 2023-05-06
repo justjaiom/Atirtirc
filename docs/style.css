@@ -23,6 +23,18 @@ a {
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
 }
+.dropdown{
+    width: auto;
+}
+.dropdown::after{
+    content: url(imgs/down_arrow.png);
+    position: absolute;
+    top: -4.5rem;
+    left: -105%;
+    margin: 0px;
+    padding: 0px;
+    transform: scale(.1);
+}
 
 .body-container {
     max-width: 1320px;
@@ -398,6 +410,11 @@ nav ul li:hover ul.sub-nav {
         margin-bottom: 40px;
 
     }
+
+    .dropdown::after{
+        content: none;
+    }
+    
 
     a {
         color: white;
