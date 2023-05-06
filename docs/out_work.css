@@ -98,6 +98,10 @@
     border-top: 5px solid var(--primary-color);
     z-index: 1;
   }
+
+  .hero-text span {
+    color: var(--secondary-color);
+  }
   .hero-description{
     width: 80%;
     max-width: 1080px;
