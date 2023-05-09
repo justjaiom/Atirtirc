@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="join.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
     <script type="text/javascript">
         (function () {
             emailjs.init("N7BBFqByDPn2oBQ8F");
@@ -75,10 +77,10 @@
 
                 <div class="banner">
                     <div class="container">
-                        <form action="#">
+                        <form id="form">
                             <div class="input">
                                 <input type="text" id="from_name" placeholder="First Name" required>
-                                <input type="text" id="lname" placeholder="Last Name"required >
+                                <input type="text" id="lname" placeholder="Last Name" required>
                             </div>
 
                             <div class="input">
@@ -108,11 +110,8 @@
 
                             <textarea name="message" id="message" rows="4"
                                 placeholder="Tell us what you have in mind"></textarea>
-                            <button id="submit" onclick="SendMail()" type="button">Sumbit</button>
+                            <button  id="submit" type="submit">Sumbit</button>
 
-                            <script>
-                                
-                            </script>
                         </form>
                     </div>
                 </div>
@@ -122,6 +121,7 @@
 
 
     <script src="script.js"></script>
+
 </body>
 
 </html>

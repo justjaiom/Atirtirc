@@ -43,7 +43,9 @@
     
   }
 
-
+#submit{
+  border: none;
+}
   
 #message{
     width: 100%;

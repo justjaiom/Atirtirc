@@ -32,3 +32,15 @@ function SendMail() {
         alert("Success!" + res.status);
     })
 }
+
+$('#form').on('submit',function (e) {
+    e.preventDefault();
+    SendMail()
+ 
+ }
+
+)
+
+$('#form').one('submit', function() {
+    $(this).find('input[type="submit"]').attr('disabled', 'disabled');
+});
